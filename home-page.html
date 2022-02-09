@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/home-page.css">
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" data-auto-replace-svg="nest"></script>
+    
 
 
 </head>
@@ -92,7 +93,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a class="page-scroll a-about" href="#about" routerLink="/main/profile/0/createTour/0">
-                                    <i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 15px;"></i> Giới thiệu
+                                    <i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 15px;"></i> Tổng quát
                                 </a>
                             </li>
                             <!-- <li>
@@ -101,16 +102,31 @@
                                 </a>
                             </li> -->
                             <li>
-                                <a class="page-scroll" href="javascript:void(0)" routerLink="/main/profile/0/createPost/0">
-                                    <img src="img/crib.png" aria-hidden="true" style="font-size: 17px;"></i> Sản phẩm
+                                <a class="page-scroll a-product" href="#product" routerLink="/main/profile/0/createPost/0">
+                                    <i class="fas fa-baby-carriage" aria-hidden="true" style="font-size: 17px;"></i> Sản phẩm
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll a-product" href="#product" routerLink="/main/profile/0/createPost/0">
+                                    <i class="fa-solid fa-sparkles" aria-hidden="true" style="font-size: 17px;"></i> Đặc trưng
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll a-product" href="#product" routerLink="/main/profile/0/createPost/0">
+                                    <i class="fas fa-baby-carriage" aria-hidden="true" style="font-size: 17px;"></i> Công nghệ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="page-scroll a-product" href="#product" routerLink="/main/profile/0/createPost/0">
+                                    <i class="fas fa-baby-carriage" aria-hidden="true" style="font-size: 17px;"></i> Thiết kế
                                 </a>
                             </li>
                             <li>
                                 <a class="page-scroll a-contact" href="#contact">
-                                    <i class="fas fa-phone" aria-hidden="true"></i> Liên hệ
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Liên hệ đặt hàng
                                 </a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="page-scroll" routerLink="/login" href="login.html" *ngIf="user == null">
                                     <i class="fas fa-sign-in-alt" aria-hidden="true"></i> ĐĂNG NHẬP
                                 </a>
@@ -119,7 +135,7 @@
                                 <a class="page-scroll" routerLink="/register" href="register.html" *ngIf="user == null">
                                     <i class="fas fa-user-plus" aria-hidden="true"></i> ĐĂNG KÍ
                                 </a>
-                            </li>
+                            </li> -->
                             <!-- <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" *ngIf="user && user.userName">
                                     <i class="far fa-user-circle" aria-hidden="true"></i> phuongpyke
@@ -168,12 +184,12 @@
                 </li>
                 <li>
                     <a data-toggle="tab" href="#tours">
-                        <i class="fa fa-train" aria-hidden="true"></i> Bài đăng
+                        <i class="fa-solid fa-question" aria-hidden="true"></i> Câu hỏi thường gặp
                     </a>
                 </li>
                 <li>
                     <a data-toggle="tab" href="#location">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> Địa điểm
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Diễn đàn
                     </a>
                 </li>
                 <li>
@@ -190,7 +206,8 @@
 
             <div class="tab-content">
                 <div id="post" class="tab-pane fade in active">
-                    <h2>
+                    <h2>công dụng</h2>
+                    <!-- <h2>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tìm kiếm theo bài đăng
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                     </h2>
@@ -205,10 +222,11 @@
                                 <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="tours" class="tab-pane fade">
-                    <h2>
+                    <h2>Câu hỏi thường gặp</h2>
+                    <!-- <h2>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tìm kiếm chuyến đi
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                     </h2>
@@ -223,10 +241,11 @@
                                 <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="location" class="tab-pane fade">
-                    <h2>
+                    <h2>Diễn đàn</h2>
+                    <!-- <h2>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tìm kiếm theo địa điểm
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                     </h2>
@@ -241,10 +260,11 @@
                                 <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="category" class="tab-pane fade">
-                    <h2>
+                    <h2>Thể loại</h2>
+                    <!-- <h2>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tìm kiếm theo thể loại
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                     </h2>
@@ -259,10 +279,11 @@
                                 <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="date" class="tab-pane fade">
-                    <h2>
+                    <h2>Ngày</h2>
+                    <!-- <h2>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Tìm kiếm theo số ngày
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
                     </h2>
@@ -277,7 +298,7 @@
                                 <i class="fa fa-search" aria-hidden="true"></i> Tìm kiếm
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -285,34 +306,54 @@
 
 
 
-    <section id="about" style="background-image: url(img/about_image.PNG);opacity: 0.5;">
+    <section id="about" style="  position: relative;    padding-top: 0px;">
+        <div style="background-image: url(img/about_image.PNG);opacity: 0.5;     height: 800px
+        ;
+            background-repeat: no-repeat;
+            background-position: center;">
+        </div>
         <div class="container">
-            <div class="col-xs-12 col-sm-6 col-md-6 text-info">
+            <div class="col-xs-12 col-sm-6 col-md-6" style="background-color: #fff;opacity: 0.4; height: 800px;
+            width: 1200px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 20%; position: absolute;">
+            
+            
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 text-info" style=" transition: .5s ease;
+            opacity: 1;
+            position: absolute;
+            left: 30%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+          ">
                 <div class="t-title">
                     <i class="fas fa-globe" aria-hidden="true"></i>
                 </div>
                 <h1>
                     <span class="color-run m-title f-size">
-                        <span class="lg-s">K</span>hám phá Baby Crib</span>
+                        <span class="lg-s">G</span>ới thiệu về Baby Crib</span>
                 </h1>
-                <div class="text">
+                <div class="text" style="color: black;
+                font-size: 24px;">
                     <p>
-                        Cùng TRIP NET chia sẽ - trải nghiệm các địa danh du lịch bụi trên khắp Việt Nam. Khám phá những vẻ đẹp hoang sơ - hùng vĩ mà ít người đặt chân đến.
+                        “Phát triển toàn diện của trẻ em là sự phát triển đồng thời cả về thể chất, trí tuệ, tinh thần, đạo đức và mối quan hệ xã hội của trẻ em.” Căn cứ vào điều luật này, phụ huynh, nhà trường và xã hội sẽ có những hoạt động phù hợp để trẻ phát triển ở mọi lĩnh vực trong cuộc sống.
                     </p>
                     <li>
-                        Địa danh đặc biệt
+                        Về mặt trí tuệ
                     </li>
                     <li>
-                        Thông tin tin cậy - chính xác
+                        Về mặt tinh thần
                     </li>
                     <li>
-                        Kết giao với những người bạn mới
+                        Về mặt thể chất
                     </li>
                     <li>
-                        Những trải nghiệm đáng giá
+                        Về mặt cảm xúc xã hội
                     </li>
                     <li>
-                        Những hành trình mới đang chờ đợi bạn khám phá
+                        Đặc biệt là giấc ngủ
                     </li>
 
                 </div>
@@ -330,17 +371,17 @@
             </div>
             <h1>
                 <span class="color-run m-title f-size">
-                    <span class="lg-s">B</span>ài viết nổi bật</span>
+                    <span class="lg-s">S</span>ản phẩm</span>
             </h1>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-flickity='{ "groupCells": 8, "autoPlay": true }'>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-4" *ngFor="let tourPost of listTourPostFavoriteBefore">
+                            <div class="col-xs-12 col-sm-3 col-md-3" >
                                 <div class="thumbnail">
                                     <div class="m-container">
-                                        <img [src]="baseFolder + tourPost.image" alt="Avatar" class="image">
+                                        <img src="img/1.jpg" alt="Avatar" class="image">
                                         <!-- <div class="overlay">
                                             <div class="text">{{tourPost.tourArticleTitle}}</div>
                                         </div> -->
@@ -348,26 +389,133 @@
                                     <div class="summary">
                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                             <span>
-                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i> {{tourPost.postViewNumber}}
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i> 10000
                                             </span>
                                         </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" (click)=likeTourPost(tourPost,true)>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border">
                                             <span>
-                                                <i class="fa fa-heart" aria-hidden="true" [ngStyle]="{'color': (tourPost.liked && tourPost.likedID != 0) ? 'red': 'gray'}"></i> {{tourPost.countLike}}
-                                            </span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i> 100
                                         </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                             <span>
-                                                <i class="fa fa-comment" aria-hidden="true"></i> {{tourPost.countComment}}
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 40
                                             </span>
                                         </div>
                                     </div>
                                     <div class="clear-fix"></div>
                                     <div class="description">
                                         <h3>
-                                            <span>{{tourPost.tourArticleTitle}}</span>
+                                            <span>tên sản phẩm</span>
                                         </h3>
-                                        <p>{{tourPost.description}}</p>
+                                        <p>mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" >
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/2.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                            <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                        </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i> 2000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i> 700
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 1900
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>tên sản phẩm</span>
+                                        </h3>
+                                        <p>mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" >
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/3.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                            <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                        </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i> 7000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i> 6000
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 3000
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>tên sản phẩm</span>
+                                        </h3>
+                                        <p>Mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" >
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/4.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                            <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                        </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i> 10000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border">
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true"></i> 10002
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 1201
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>Tên sản phẩm</span>
+                                        </h3>
+                                        <p>Mô tả</p>
                                     </div>
                                     <div class="a-more">
                                         <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
@@ -378,10 +526,10 @@
                     </div>
                     <div class="item ">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-4" *ngFor="let tourPost of listTourPostFavoriteAfter">
+                            <div class="col-xs-12 col-sm-3 col-md-3" for>
                                 <div class="thumbnail">
                                     <div class="m-container">
-                                        <img [src]="baseFolder + tourPost.image" alt="Avatar" class="image">
+                                        <img src="img/1.jpg" alt="Avatar" class="image">
                                         <!-- <div class="overlay">
                                                 <div class="text">{{tourPost.tourArticleTitle}}</div>
                                             </div> -->
@@ -389,26 +537,133 @@
                                     <div class="summary">
                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                             <span>
-                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i>{{tourPost.postViewNumber}}
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i>1000
                                             </span>
                                         </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" (click)=likeTourPost(tourPost,true)>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" >
                                             <span>
-                                                <i class="fa fa-heart" aria-hidden="true" [ngStyle]="{'color': (tourPost.liked && tourPost.likedID != 0) ? 'red': 'gray'}"></i> {{tourPost.countLike}}
+                                                <i class="fa fa-heart" aria-hidden="true" ></i> 2000
                                             </span>
                                         </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4">
                                             <span>
-                                                <i class="fa fa-comment" aria-hidden="true"></i> {{tourPost.countComment}}
-                                            </span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 3000
                                         </div>
                                     </div>
                                     <div class="clear-fix"></div>
                                     <div class="description">
                                         <h3>
-                                            <span>{{tourPost.tourArticleTitle}}</span>
+                                            <span>Tên sản phẩm</span>
                                         </h3>
-                                        <p>{{tourPost.description}}</p>
+                                        <p>Mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" for>
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/2.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                                <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                            </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i>1000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" >
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true" ></i> 2000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 3000
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>Tên sản phẩm</span>
+                                        </h3>
+                                        <p>Mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" for>
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/3.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                                <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                            </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i>1000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" >
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true" ></i> 2000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 3000
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>Tên sản phẩm</span>
+                                        </h3>
+                                        <p>Mô tả</p>
+                                    </div>
+                                    <div class="a-more">
+                                        <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3" for>
+                                <div class="thumbnail">
+                                    <div class="m-container">
+                                        <img src="img/4.jpg" alt="Avatar" class="image">
+                                        <!-- <div class="overlay">
+                                                <div class="text">{{tourPost.tourArticleTitle}}</div>
+                                            </div> -->
+                                    </div>
+                                    <div class="summary">
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-eye" aria-hidden="true" style="font-size: 17px;"></i>1000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4 s-border" >
+                                            <span>
+                                                <i class="fa fa-heart" aria-hidden="true" ></i> 2000
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-4">
+                                            <span>
+                                                <i class="fa fa-comment" aria-hidden="true"></i> 3000
+                                        </div>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                    <div class="description">
+                                        <h3>
+                                            <span>Tên sản phẩm</span>
+                                        </h3>
+                                        <p>Mô tả</p>
                                     </div>
                                     <div class="a-more">
                                         <a href="javascript:void(0)" (click)=detailTourPost(tourPost)>Chi tiết</a>
@@ -439,16 +694,20 @@
             <div class="container">
                 <div class="col-xs-12 col-sm-5 col-md-5 b-left">
                     <h4 class="sub-title m-title">
-                        <span>VIỆT NAM</span>&nbsp; ngoài kia</h4>
+                        <span>Sản phẩm</span>&nbsp; của thời đại</h4>
                     <h1>
                         <span class="color-run m-title f-size">
-                            <span class="lg-s">X</span>ách Balo lên và đi</span>
+                            <span class="lg-s">M</span>ón quà tinh thần cho bé yêu</span>
                     </h1>
-                    <p>Một VIỆT NAM rộng lớn muôn màu - muôn vẻ rộng lớn. Bạn đã đi và khám phá được bao nhiêu. Hãy là người đầu tiên đặt chân lên những thắng cảnh - địa danh mà chưa ai biết đến. Hẫy đi khi còn tuổi trẻ để về sau không phải hối tiếc.
+                    <p>
+                        - Ghế rung Joie Serina 2 in 1 cung cấp cho mẹ 2 cách đưa: Từ trước ra sau hoặc đưa sang ngang (giúp bé yêu không bị nhàm chán khi nằm).
+                        - Với 6 tốc độ đưa tùy chọn, ghế rung tự động Joie Serina 2 in 1 Swing and Rocker giúp cho việc chăm sóc trẻ sơ sinh được dễ dàng hơn.
+                        - Ghế nôi có 3 góc độ ngả lưng ghế cung cấp cho bé yêu một không gian thoải mái để nằm ngủ hay ngồi chơi cung như khi cho bú bình.
+                        
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7 b-right">
-                    <iframe width="650" height="366" src="https://www.youtube-nocookie.com/embed/QmgB126wYyM?rel=0&amp;controls=0&amp;showinfo=0&amp;start=24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="650" height="366" src="https://www.youtube-nocookie.com/embed/QtZA1hi6E4I?rel=0&amp;controls=0&amp;showinfo=0&amp;start=24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -458,16 +717,51 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 col-md-6 b-left">
                 <div class="list-tour">
-                    <div class="tour" *ngFor="let groupTour of listGroupTour">
+                    <div class="tour">
                         <div class="media">
                             <div class="media-left">
-                                <img [src]="baseFolder + groupTour.image" class="media-object" style="width:44px">
+                                <img src="img/1.jpg" class="media-object" style="width:44px">
                             </div>
                             <div class="media-body">
-                                <a class="media-heading" (click)="detailGroupTour(groupTour)">{{groupTour.tourArticleTitle}}</a>
-                                <p>{{groupTour.startPlaceID}} - {{groupTour.endPlaceID}}
-                                    <span>|</span>{{groupTour.duration}} ngày {{groupTour.duration == 0 ? 0 : groupTour.duration - 1}} đêm
-                                    <span>|</span>{{groupTour.countMember}} thành viên</p>
+                                <a class="media-heading" (click)="detailGroupTour(groupTour)">AI nhận diện khuôn mặt</a>
+                                <p>Mô tả chi tiết</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/2.jpg" class="media-object" style="width:44px">
+                            </div>
+                            <div class="media-body">
+                                <a class="media-heading" (click)="detailGroupTour(groupTour)">Đưa võng tùy theo độ tuổi</a>
+                                <p>Mô tả chi tiết</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/3.jpg" class="media-object" style="width:44px">
+                            </div>
+                            <div class="media-body">
+                                <a class="media-heading" (click)="detailGroupTour(groupTour)">Báo cáo sức khỏe hàng ngày</a>
+                                <p>Mô tả chi tiết</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="img/4.jpg" class="media-object" style="width:44px">
+                            </div>
+                            <div class="media-body">
+                                <a class="media-heading" (click)="detailGroupTour(groupTour)">Chế độ dinh dưỡng</a>
+                                <p>Mô tả chi tiết</p>
+
                             </div>
                         </div>
                     </div>
@@ -475,16 +769,17 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 b-right">
                 <h4 class="sub-title m-title">Những &nbsp;
-                    <span>CHUYẾN ĐI</span>&nbsp; sẵn sàng</h4>
+                    <span>TÍNH NĂNG</span>&nbsp; tuyệt vời</h4>
                 <h1>
                     <span class="color-run2 m-title f-size">
-                        <span class="lg-s">T</span>ham gia ngay</span>
+                        <span class="lg-s">Đ</span>ăng kí ngay</span>
                 </h1>
 
-                <p>Rất nhiều địa danh bí ẩn đang chờ bạn khám phá. Hãy tham gia ngay cùng với những người khác, tham gia vào những chuyến đi - kết giao với những người bạn mới cùng nhau đồng hành trên mọi cung đường.
+                <p>Cuộc sống bộn bề công việc khiến các bậc cha mẹ không thể nào ở bên cạnh bé 24/7 được . Nhưng tình yêu thường mà cha mẹ dành cho con cái là vô bờ bến , vì vậy chúng tôi đã cho ra đời sản phẩm BABY-CRIB . 
+                    Nôi 4.0 nôi của thời đại , chúng tôi sẽ giúp các bạn vừa cân bằng được công việc và vừa có thể theo dõi sức khỏe và chăm sóc bé online được.
                 </p>
 
-                <p class="quota">Giá trị của nhưng chuyến đi không phải là bao lâu, bao xa mà là nhưng người người bạn.</p>
+                <p class="quota">Giá trị của chúng tôi đem lại cho bạn không phải là sản phẩm có bền không, giá có rẻ không mà chúng tôi là người cùng đồng hành với bạn và con bạn.</p>
 
                 <div class="btn-show-more">
                     <a href="javascript:void(0)" (click)="seeMore(0)">Xem thêm</a>
@@ -538,18 +833,18 @@
     <footer style="position: initial;">
         <div class="container infoMap">
             <div class="col-md-6">
-                <h2 class="title">TRIP NET</h2>
-                <p class="text">Mạng xã hội chia sẽ địa điểm, tạo chuyến đi du dịch - phượt ở Việt Nam.</p>
+                <h2 class="title">BABY CRIB</h2>
+                <p class="text">Sản phẩm thông minh, tạo cảm giác an tâm - an toàn cho trẻ nhỏ.</p>
                 <ul>
                     <li>
-                        <a href="">Thông tin</a>
+                        <a href="">Giới thiệu</a>
                     </li>
                     <li>
-                        <a href="">Bài viết</a>
+                        <a href="">Sản phẩm</a>
                     </li>
 
                     <li>
-                        <a href="">Chuyến đi</a>
+                        <a href="">Tính năng</a>
                     </li>
                     <li>
                         <a href="">Liên hệ</a>
@@ -557,9 +852,9 @@
                 </ul>
 
                 <p>
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i> tripnet@gmail.com</p>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> babycrib@gmail.com</p>
                 <p>
-                    <i class="fa fa-phone" aria-hidden="true"></i> +024 236 255</p>
+                    <i class="fa fa-phone" aria-hidden="true"></i> +840357123633</p>
                 <p>
                     <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 19px;"></i> xxxx - xxxx - xxxx</p>
             </div>
@@ -582,7 +877,7 @@
                         marker.setMap(map);
 
                         var infowindow = new google.maps.InfoWindow({
-                            content: "TripNet"
+                            content: "Baby-Crib"
                         });
                         infowindow.open(map, marker);
                     }
@@ -611,7 +906,7 @@
         </div>
 
         <div class="container-fruid f-info">
-            <div class="col-md-4 col-md-offset-2">©2017 TripNet - Mạng chia sẽ kinh nghiệm du lịch</div>
+            <div class="col-md-4 col-md-offset-2">©2017 BabyCrib - Sản phẩm thông minh</div>
             <div class="col-md-4 text-right">
                 <a href="">Điều khoản sự dụng </a>
                 <a href="">Cookies </a>
@@ -620,14 +915,14 @@
         </div>
 
 
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-        <!-- <script src="../assets/js/jquery.vide.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/scrollToTop.js"></script>
-    <script src="../assets/smoothScrolling.js"></script> -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a2ae2ae47d26f21"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollToTop.js"></script>
+    <script src="js/smoothScrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a2ae2ae47d26f21"></script>
 </body>
 
 
