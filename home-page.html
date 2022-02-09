@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/home-page.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+
 
 </head>
 
@@ -25,40 +27,40 @@
                     <ul class="pull-left">
                         <li>
                             <a href="#" style="border-right: 1px solid rgba(255, 255, 255, 0.3);">
-                                <i class="fa fa-phone" aria-hidden="true"></i> +84357123633
+                                <i class="fas fa-phone" aria-hidden="true"></i> +84357123633
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                <i class="fab fa-google-plus" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
                     <ul class="pull-right">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-globe" aria-hidden="true"></i> Ngôn ngữ
+                                <i class="fas fa-globe" aria-hidden="true"></i> Ngôn ngữ
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu top-menu">
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i> English
+                                        <i class="fas fa-angle-right" aria-hidden="true"></i> English
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa fa-angle-right" aria-hidden="true"></i> Vietnamese
+                                        <i class="fas fa-angle-right" aria-hidden="true"></i> Vietnamese
                                     </a>
                                 </li>
                             </ul>
@@ -68,7 +70,7 @@
                         </li>
                         <li>
                             <a href="">
-                                <i class="fa fa-question-circle" aria-hidden="true"></i> Giúp đỡ
+                                <i class="fas fa-question-circle" aria-hidden="true"></i> Giúp đỡ
                             </a>
                         </li>
                     </ul>
@@ -89,7 +91,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a class="page-scroll" href="javascript:void(0)" routerLink="/main/profile/0/createTour/0">
+                                <a class="page-scroll a-about" href="#about" routerLink="/main/profile/0/createTour/0">
                                     <i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 15px;"></i> Giới thiệu
                                 </a>
                             </li>
@@ -105,22 +107,22 @@
                             </li>
                             <li>
                                 <a class="page-scroll a-contact" href="#contact">
-                                    <i class="fa fa-phone" aria-hidden="true"></i> Liên hệ
+                                    <i class="fas fa-phone" aria-hidden="true"></i> Liên hệ
                                 </a>
                             </li>
                             <li>
-                                <a class="page-scroll" routerLink="/login" href="#" *ngIf="user == null">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i> ĐĂNG NHẬP
+                                <a class="page-scroll" routerLink="/login" href="login.html" *ngIf="user == null">
+                                    <i class="fas fa-sign-in-alt" aria-hidden="true"></i> ĐĂNG NHẬP
                                 </a>
                             </li>
                             <li>
-                                <a class="page-scroll" routerLink="/register" href="#" *ngIf="user == null">
-                                    <i class="fa fa-user-plus" aria-hidden="true"></i> ĐĂNG KÍ
+                                <a class="page-scroll" routerLink="/register" href="register.html" *ngIf="user == null">
+                                    <i class="fas fa-user-plus" aria-hidden="true"></i> ĐĂNG KÍ
                                 </a>
                             </li>
-                            <li class="dropdown">
+                            <!-- <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" *ngIf="user && user.userName">
-                                    <i class="fa fa-user-circle-o" aria-hidden="true"></i> phuongpyke
+                                    <i class="far fa-user-circle" aria-hidden="true"></i> phuongpyke
                                     <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu main-menu">
@@ -135,7 +137,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
 
@@ -283,15 +285,15 @@
 
 
 
-    <section id="about">
+    <section id="about" style="background-image: url(img/about_image.PNG);opacity: 0.5;">
         <div class="container">
             <div class="col-xs-12 col-sm-6 col-md-6 text-info">
                 <div class="t-title">
-                    <i class="fa fa-car" aria-hidden="true"></i>
+                    <i class="fas fa-globe" aria-hidden="true"></i>
                 </div>
                 <h1>
                     <span class="color-run m-title f-size">
-                        <span class="lg-s">K</span>hám phá Việt Nam</span>
+                        <span class="lg-s">K</span>hám phá Baby Crib</span>
                 </h1>
                 <div class="text">
                     <p>
@@ -315,13 +317,13 @@
 
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <img src="img/mapvn.png" width="100%">
-            </div>
+            <!-- <div class="col-xs-12 col-sm-6 col-md-6">
+                <img src="img/about_image.PNG" width="100%">
+            </div> -->
         </div>
     </section>
     <section id="top-bg-post" class="trans-color"></section>
-    <section id="top-post" style="background-image: url(img/most.jpg);">
+    <section id="product" style="background-image: url(img/most.jpg);">
         <div class="container">
             <div class="t-title">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>

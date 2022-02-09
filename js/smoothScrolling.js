@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".a-contact, .a-post, .a-about, .a-search").on('click', function(event) {
+    $(".a-contact, .a-product, .a-about, .a-search, ").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
