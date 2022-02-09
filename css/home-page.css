@@ -267,13 +267,15 @@ article {
 }
 
 .navbar-brand {
-    padding: 30px 15px;
+    padding: 0px;
     font-size: 36px;
     letter-spacing: 2px;
     font-style: italic;
     height: 80px;
 }
-
+.navbar-brand img {
+    display: inline;
+}
 #mainNav .nav>li>a {
     padding: 30px 15px;
     font-size: 15px;
